@@ -22,5 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install poetry
           poetry install
+      - name: Run lint checks 🧹
+        run: make lint
       - name: Run tests 🚀
-        run: make tests
+        run: make test
